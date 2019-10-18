@@ -7,3 +7,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Huaqin project
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.hq.project=ZQL1650
+    
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.vendor.qti.va_aosp.support=1
