@@ -184,6 +184,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     mmp.enable.3g2=true \
     persist.mm.enable.prefetch=true \
     vendor.vidc.enc.disable.pq=true \
+    ro.media.recorder-max-base-layer-fps=60 \
     vendor.vidc.enc.disable_bframes=1 \
     vendor.vidc.dec.enable.downscalar=1 \
     vendor.vidc.enc.disable.pq=false \
