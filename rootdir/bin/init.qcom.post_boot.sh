@@ -1604,13 +1604,6 @@ case "$target" in
                 # Enable timer migration to little cluster
                 echo 1 > /proc/sys/kernel/power_aware_timer_migration
 
-                case "$soc_id" in
-                        "277" | "278")
-                        # Start energy-awareness for 8976
-                        start energy-awareness
-                ;;
-                esac
-
                 #enable sched colocation and colocation inheritance
                 echo 130 > /proc/sys/kernel/sched_grp_upmigrate
                 echo 110 > /proc/sys/kernel/sched_grp_downmigrate
@@ -2371,8 +2364,11 @@ case "$target" in
                 "317" | "324" | "325" | "326" | "345" | "346" )
 
             # cpuset settings
-            echo 0-3 > /dev/cpuset/background/cpus
+            echo 0-7 > /dev/cpuset/top-app/cpus
+            echo 0-3,6-7 > /dev/cpuset/foreground/cpus
+            echo 0-1 > /dev/cpuset/background/cpus
             echo 0-3 > /dev/cpuset/system-background/cpus
+            echo 0-3 > /dev/cpuset/restricted/cpus
 
             # disable thermal bcl hotplug to switch governor
             echo 0 > /sys/module/msm_thermal/core_control/enabled
@@ -2383,14 +2379,12 @@ case "$target" in
             echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
             echo 20000 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
             echo 500 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
-            echo 633600 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
             # online CPU4
             echo 1 > /sys/devices/system/cpu/cpu4/online
             # configure governor settings for big cluster
             echo "schedutil" > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
             echo 20000 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us
             echo 500 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us
-            echo 1113600 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
 
             # bring all cores online
             echo 1 > /sys/devices/system/cpu/cpu0/online
@@ -2446,12 +2440,12 @@ case "$target" in
                 echo 1600 > $cpubw/bw_hwmon/idle_mbps
             done
 
-            for memlat in /sys/class/devfreq/*qcom,memlat-cpu*
-            do
-                echo "mem_latency" > $memlat/governor
-                echo 10 > $memlat/polling_interval
-                echo 400 > $memlat/mem_latency/ratio_ceil
-            done
+#            for memlat in /sys/class/devfreq/*qcom,memlat-cpu*
+#            do
+#                echo "mem_latency" > $memlat/governor
+#                echo 10 > $memlat/polling_interval
+#                echo 400 > $memlat/mem_latency/ratio_ceil
+#            done
             echo "cpufreq" > /sys/class/devfreq/soc:qcom,mincpubw/governor
 
             # Start cdsprpcd only for sdm660 and disable for sdm630
@@ -4310,12 +4304,3 @@ esac
 misc_link=$(ls -l /dev/block/bootdevice/by-name/misc)
 real_path=${misc_link##*>}
 setprop persist.vendor.mmi.misc_dev_path $real_path
-
-# set sys.use_fifo_ui prop if eas exist
-	available_governors=$(cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_governors)
-
-	if echo "$available_governors" | grep schedutil; then
-	  echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-	  echo "schedutil" > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
-	  setprop sys.use_fifo_ui 1
-	fi

@@ -43,7 +43,6 @@ on init
     chown system system /sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/hyst_trigger_count
     chown system system /sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/hist_memory
 
-
     chmod 0664 /dev/stune/top-app/schedtune.boost
     chmod 0664 /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
     chmod 0664 /sys/class/kgsl/kgsl-3d0/devfreq/max_freq
@@ -64,6 +63,37 @@ on init
     chown system system /dev/cpuset/camera-daemon
     chown system system /dev/cpuset/camera-daemon/tasks
     chmod 0664 /dev/cpuset/camera-daemon/tasks
+    
+    # Setup permission for Power HAL
+    chown system system /dev/stune/top-app/schedtune.boost
+    chown system system /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
+    chown system system /sys/class/kgsl/kgsl-3d0/devfreq/max_freq
+    chown system system /sys/class/kgsl/kgsl-3d0/force_rail_on
+    chown system system /sys/class/kgsl/kgsl-3d0/force_clk_on
+    chown system system /sys/class/kgsl/kgsl-3d0/idle_timer
+    chown system system /sys/class/devfreq/soc:qcom,cpubw/min_freq
+    chown system system /sys/class/devfreq/soc:qcom,gpubw/min_freq
+    chown system system /sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/hyst_trigger_count
+    chown system system /sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/hist_memory
+    chown system system /sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/sample_ms
+    chown system system /sys/class/devfreq/soc:qcom,memlat-cpu4/min_freq
+    chown system system /sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/hyst_length
+    chown system system /dev/cpu_dma_latency
+
+    chmod 0664 /dev/stune/top-app/schedtune.boost
+    chmod 0664 /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
+    chmod 0664 /sys/class/kgsl/kgsl-3d0/devfreq/max_freq
+    chmod 0664 /sys/class/kgsl/kgsl-3d0/force_rail_on
+    chmod 0664 /sys/class/kgsl/kgsl-3d0/force_clk_on
+    chmod 0664 /sys/class/kgsl/kgsl-3d0/idle_timer
+    chmod 0664 /sys/class/devfreq/soc:qcom,cpubw/min_freq
+    chown 0664 /sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/hyst_length
+    chmod 0664 /sys/class/devfreq/soc:qcom,gpubw/min_freq
+    chmod 0664 /sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/hyst_trigger_count
+    chmod 0664 /sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/hist_memory
+    chmod 0664 /sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/sample_ms
+    chmod 0664 /sys/class/devfreq/soc:qcom,memlat-cpu4/min_freq
+    chmod 0664 /dev/cpu_dma_latency
 
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
@@ -122,6 +152,10 @@ on boot
     chown system system /persist/speccfg/vendor_persist.prop
     chown system system /persist/speccfg/submask
     chown system system /persist/speccfg/partition
+    
+    # Touchpanel
+    chown system system /sys/touchpanel/double_tap
+    chmod 0664 /sys/touchpanel/double_tap
 
 #Create folder dump yuv images while debugging
     mkdir /data/vendor/camera 0770 camera camera
@@ -196,7 +230,9 @@ on boot
     write /sys/module/usb_f_qcrndis/parameters/rndis_dl_max_xfer_size 15916
     setprop sys.usb.configfs 1
 
-    chmod 0664 /proc/touchpanel/double_tap_enable
+    chmod 0664 /sys/touchpanel/capacitive_keys
+    chmod 0664 /sys/touchpanel/double_tap
+    chmod 0664 /sys/touchpanel/reversed_keys
 
 #Peripheral manager
 service vendor.per_mgr /vendor/bin/pm-service
@@ -247,12 +283,6 @@ service vendor.cdsprpcd /vendor/bin/cdsprpcd
    user system
    group system
    disabled
-
-service energy-awareness /vendor/bin/energy-awareness
-    class main
-    user system
-    group system
-    oneshot
 
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core

@@ -400,9 +400,21 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti \
-    vendor.qti.hardware.perf@2.0.vendor \
-    android.hardware.power.stats@1.0-service
+    android.hardware.power-service.asus_X00QD-libperfmgr
+    
+# Powerhint
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/power-libperfmgr/sdm636_powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+    
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+    hardware/google/interfaces \
+    hardware/google/pixel
+    
+# ATRACE_HAL
+PRODUCT_PACKAGES += \
+    android.hardware.atrace@1.0-service
 
 # Protobuf
 PRODUCT_PACKAGES += \
@@ -472,7 +484,6 @@ PRODUCT_PACKAGES += \
     RcsService
 
 # Soong namespaces
-PRODUCT_SOONG_NAMESPACES := $(LOCAL_PATH)
 PRODUCT_BOARD_PLATFORM := sdm660
 PRODUCT_USES_QCOM_HARDWARE := true
 
