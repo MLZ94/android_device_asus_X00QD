@@ -183,6 +183,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.mm.enable.qcom_parser=13631487 \
     mmp.enable.3g2=true \
     persist.mm.enable.prefetch=true \
+    vendor.vidc.enc.disable.pq=true \
     vendor.vidc.enc.disable_bframes=1 \
     vendor.vidc.dec.enable.downscalar=1 \
     vendor.vidc.enc.disable.pq=false \
