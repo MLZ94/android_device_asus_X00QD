@@ -566,4 +566,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     ZenParts
 
+# Prebuilt Packages
+PRODUCT_PACKAGES += \
+    GCamGo
+
 $(call inherit-product, vendor/asus/X00QD/X00QD-vendor.mk)
