@@ -267,6 +267,9 @@ on boot
     chmod 0664 /sys/touchpanel/double_tap
     chmod 0664 /sys/touchpanel/reversed_keys
 
+    # Disable serial console
+    setprop init.svc.console stopped
+
 #Peripheral manager
 service vendor.per_mgr /vendor/bin/pm-service
     class core
