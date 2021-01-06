@@ -1,3 +1,5 @@
+binder_call(rild, qtidataservices_app)
+
 allow rild proc:file { getattr open read write };
 
 dontaudit rild tombstone_data_file:dir search;
