@@ -1,3 +1,5 @@
+binder_call(rild, qtidataservices_app)
+
 allow rild proc:file { getattr open read write };
 allow rild proc_evtlog:file write;
 
