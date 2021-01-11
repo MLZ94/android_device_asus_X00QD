@@ -48,10 +48,10 @@ TARGET_VENDOR := asus
 TARGET_VENDOR_PRODUCT_NAME := X00QD
 
 # Maintainer
-EVO_DONATE_URL := https://www.patreon.com/emincangencer
-EVO_MAINTAINER := emincangencer
-EVO_SUPPORT_URL := https://t.me/EvolutionXX00QD
-EVO_BUILD_TYPE := OFFICIAL
+EVO_DONATE_URL := https://www.patreon.com/MLZ94
+EVO_MAINTAINER := MLZ
+EVO_SUPPORT_URL := https://t.me/MLZ94
+EVO_BUILD_TYPE := UNOFFICIAL
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="redfin-user 11 RQ1A.210105.003 7005429 release-keys"
