@@ -538,7 +538,7 @@ PRODUCT_PACKAGES += \
 
 # WFD
 PRODUCT_PACKAGES += \
-    libnl
+    libnl \
     libshim_wfdmmsink \
     libstagefright_enc_common \
 
