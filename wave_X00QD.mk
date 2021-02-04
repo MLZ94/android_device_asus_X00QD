@@ -41,15 +41,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-asus
 TARGET_VENDOR := asus
 TARGET_VENDOR_PRODUCT_NAME := X00QD
 
-<<<<<<< HEAD:wave_X00QD.mk
-=======
-# Maintainer
-EVO_DONATE_URL := https://www.patreon.com/MLZ94
-EVO_MAINTAINER := MLZ
-EVO_SUPPORT_URL := https://t.me/MLZ94
-EVO_BUILD_TYPE := UNOFFICIAL
-
->>>>>>> 577d21a... X00QD: redfin Feb 2021 fingerprint:evolution_X00QD.mk
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="redfin-user 11 RQ1A.210205.004 7038034 release-keys"
 
