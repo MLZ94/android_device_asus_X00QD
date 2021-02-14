@@ -165,23 +165,14 @@ vendor/lib64/soundfx/libqcomvisualizer.so
 vendor/lib64/soundfx/libqcomvoiceprocessing.so
 vendor/lib64/soundfx/libvolumelistener.so
 
-# Bluetooth - from LA.UM.8.2.r1-07400-sdm660.0
+# Bluetooth - from LA.UM.8.2.r1-06200-sdm660.0
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|5acf94f38e47c2ec43c95e132dfe7b5d71ec41c4
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
-lib/libbtconfigstore.so|b2765f77529c6bbad6eafc1e8b358ad9ce20d992
-lib64/libbtconfigstore.so|abbfd1a5e773fba69dccb3121861ef3fec2cdab9
-vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|e7dfb5263d3d187ae04ee142791fd8a59eeebe7a
-vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|71644784c8f73573380004f1c69cf18b1e57964b
-vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|10bddb86ecd1c7e0b0d49fef80bc4ded29a05ce1
-vendor/lib/libbt-hidlclient.so|826a5101e2c36d7877bc924b53e22cd00bec6dd6
-vendor/lib/libbtnv.so|a1b994bac9b746f51036fc829310cec4f773c621
-vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|2def3aabe15c39a7f4e5559dad8b4707bb7ced92
-vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so|bd7fe72bf679acb93dd2945e8905ef0942f0fbb1
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|e48722ef6f738bada2a39c58f4fea732eefee192
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|ce83c30ae3fac708e40392b37142fb2283ae5b93
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|ebdfcc7064fc144acf6cba300486c6394af3d73b
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|5e06b7b33d084975d6326875268cb237ad6d8559
 vendor/lib64/libbtnv.so|a6793a7b93fa607fcec39da7479566f84ed39aa4
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|d11a6abbaddbfee605c57a1a235c1da3011ee068
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|9b7ae20ce9d6d2a67fdac94268cec441278cca3d
 vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so|e08969ef1897ec5958894323f7d6e730a1d7ce25
 
 # AptX - from crosshatch-user 10 QP1A.190711.020 5800535 release-keys

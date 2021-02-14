@@ -22,8 +22,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# Inherit some common aosp stuff
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some AEX stuff.
+
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
 
 # Inherit from X00QD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -31,27 +33,21 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Gapps Config
-WITH_GAPPS := true
-TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
+
+
+
+
+
 
 PRODUCT_BRAND := asus
 PRODUCT_DEVICE := X00QD
 PRODUCT_MANUFACTURER := asus
-PRODUCT_NAME := evolution_X00QD
+PRODUCT_NAME := aosp_X00QD
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
 TARGET_VENDOR := asus
 TARGET_VENDOR_PRODUCT_NAME := X00QD
-
-# Maintainer
-EVO_DONATE_URL := https://www.patreon.com/MLZ94
-EVO_MAINTAINER := MLZ
-EVO_SUPPORT_URL := https://t.me/MLZ94
-EVO_BUILD_TYPE := UNOFFICIAL
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="redfin-user 11 RQ1A.210205.004 7038034 release-keys"

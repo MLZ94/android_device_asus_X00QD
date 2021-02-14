@@ -15,8 +15,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_X00QD.mk
+    $(LOCAL_DIR)/aosp_X00QD.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_X00QD-userdebug \
-    evolution_X00QD-eng
+    aosp_X00QD-userdebug \
+    aosp_X00QD-eng
