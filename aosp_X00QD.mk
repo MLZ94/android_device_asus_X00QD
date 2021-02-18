@@ -33,11 +33,8 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-
-
-
-
-
+# Official build
+NEZUKO_MAINTAINER := MLZ94
 
 PRODUCT_BRAND := asus
 PRODUCT_DEVICE := X00QD
