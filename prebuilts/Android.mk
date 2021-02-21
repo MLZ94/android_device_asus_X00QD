@@ -1,9 +1,9 @@
 LOCAL_PATH:= $(call my-dir)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := GCamGo
+LOCAL_MODULE := GoogleCamera
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := system/priv-app/GCamGo/GCamGo.apk
+LOCAL_SRC_FILES := system/priv-app/GoogleCamera/GoogleCamera.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)

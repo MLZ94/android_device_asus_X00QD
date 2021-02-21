@@ -396,6 +396,10 @@ PRODUCT_ENFORCE_RRO_TARGETS := \
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
 
+# Prebuilts
+PRODUCT_PACKAGES += \
+    GoogleCamera
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
@@ -567,10 +571,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
-# Prebuilts
-PRODUCT_PACKAGES += \
-    GCamGo
-    
 # ZenParts
 PRODUCT_PACKAGES += \
     ZenParts
