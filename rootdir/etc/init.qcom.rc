@@ -58,6 +58,12 @@ on init
     chown root system /sys/fs/cgroup/memory/bg/tasks
     chmod 0660 /sys/fs/cgroup/memory/bg/tasks
 
+    # Smart charging required perms
+    chmod 0666 /sys/class/power_supply/battery/input_suspend
+    chmod 0660 /sys/class/power_supply/battery/charging_enabled
+    chown system system /sys/class/power_supply/battery/input_suspend
+    chown system system /sys/class/power_supply/battery/charging_enabled
+
     # ZRAM setup
     write /proc/sys/vm/page-cluster 0
 
