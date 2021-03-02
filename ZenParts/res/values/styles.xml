@@ -35,4 +35,9 @@
     <style name="DeviceSettings.SwitchBar" parent="@android:style/ThemeOverlay.Material.ActionBar">
     </style>
 
+    <style name="TeamAnimation.Window" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
 </resources>
