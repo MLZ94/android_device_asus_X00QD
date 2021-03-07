@@ -40,6 +40,11 @@ import com.asus.zenparts.preferences.SecureSettingSwitchPreference;
 import com.asus.zenparts.preferences.VibratorStrengthPreference;
 import com.asus.zenparts.preferences.NotificationLedSeekBarPreference;
 
+import com.asus.zenparts.fragments.team.TeamActivity;
+import android.view.MenuItem;
+import android.view.MenuInflater;
+import android.view.Menu;
+
 import com.asus.zenparts.SuShell;
 import com.asus.zenparts.SuTask;
 
@@ -418,5 +423,19 @@ public class DeviceSettings extends PreferenceFragment implements
         } catch (PackageManager.NameNotFoundException e) {
             return true;
         }
+    }
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+		menu.add(0, 0, 0, R.string.dialog_team_title);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+	    if (item.getItemId() == 0) {
+		    Intent intent = new Intent(mContext, TeamActivity.class);
+		    mContext.startActivity(intent);
+		    return true;
+	    }
+	    return false;
     }
 }
