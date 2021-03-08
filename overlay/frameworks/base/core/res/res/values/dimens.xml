@@ -16,5 +16,5 @@
 -->
 <resources>
     <!-- Default radius of the software rounded corners. -->
-    <dimen name="rounded_corner_radius">118px</dimen>
+    <dimen name="rounded_corner_radius">109px</dimen>
 </resources>
