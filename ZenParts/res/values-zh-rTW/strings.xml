@@ -12,17 +12,17 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="advanced_settings">ZenParts</string>
-    <string name="advanced_settings_summary">客製化 Customisations</string>
+    <string name="advanced_settings_summary">客製化</string>
 
     <string name="display_title">顯示</string>
 
     <!-- KCal -->
     <string name="device_kcal_title">顯示色彩校正</string>
-    <string name="kcal_enabled_summary">Calibrate Display Using KCAL</string>
+    <string name="kcal_enabled_summary">使用KCAL校準顯示</string>
 
     <!-- Backlight Dimmer -->
-    <string name="backlight_dimmer">更暗螢的螢幕背光</string>
-    <string name="backlight_summary">使螢幕亮度顯示更暗</string>
+    <string name="backlight_dimmer">更暗的螢幕背光</string>
+    <string name="backlight_summary">將最低亮度降低到低於出廠值</string>
 
     <string name="torch_title">手電筒</string>
     <string name="torch_brightness_title">亮度</string>
@@ -170,13 +170,13 @@
     <string name="fps_info_summary">顯示當前每秒的幀數</string>
 
     <!-- Ambient gesture haptic feedback -->
-    <string name="ambient_gesture_haptic_feedback">振動反饋</string>
+    <string name="ambient_gesture_haptic_feedback">震動反饋</string>
     <string name="ambient_gesture_haptic_feedback_summary">靜音時震動</string>
 
     <!-- Ambient Display -->
-    <string name="ambient_display_enable_title">環境顯示</string>
+    <string name="ambient_display_enable_title">環境感測顯示</string>
     <string name="ambient_display_enable_summary">收到通知時喚醒螢幕</string>
-    <string name="ambient_display_gestures_title">環境顯示</string>
+    <string name="ambient_display_gestures_title">環境感測顯示</string>
     <string name="ambient_display_gestures_summary">螢幕關閉時的手勢</string>
     <string name="ambient_display_summary">收到通知時喚醒螢幕</string>
     <string name="ambient_display_summary_on">收到通知時將會自動喚醒螢幕</string>
@@ -184,13 +184,13 @@
 
     <!-- Doze sensor -->
     <string name="tilt_sensor_title">傾斜感測器</string>
-    <string name="pickup_sensor_title">Pickup sensor</string>
+    <string name="pickup_sensor_title">抬起感測器</string>
     <string name="proximity_sensor_title">鄰近感測器</string>
 
     <!-- Hand wave gesture -->
     <string name="hand_wave_gesture_title">揮手</string>
     <string name="hand_wave_gesture_summary">揮手顯示通知</string>
-    <string name="hand_wave_gesture_flat_title">Detect orientation</string>
+    <string name="hand_wave_gesture_flat_title">檢測方向</string>
     <string name="hand_wave_gesture_flat_summary">將電話朝下即可靜音通知和來電</string>
 
     <!-- Pick-up gesture -->
