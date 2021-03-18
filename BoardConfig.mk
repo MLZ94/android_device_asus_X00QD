@@ -105,6 +105,9 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 # CNE and DPM
 BOARD_USES_QCNE := true
 
+# SurfaceFlinger
+TARGET_USE_AOSP_SURFACEFLINGER := true
+
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
 TARGET_CRYPTFS_HW_PATH ?= vendor/qcom/opensource/cryptfs_hw
