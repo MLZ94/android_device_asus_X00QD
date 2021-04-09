@@ -541,11 +541,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
-# Offline charger
-PRODUCT_PACKAGES += \
-    charger_res_images \
-    product_charger_res_images
-
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
@@ -565,15 +560,5 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
-# ZenParts
-PRODUCT_PACKAGES += \
-    ZenParts
-
-# Prebuilt Packages
-PRODUCT_PACKAGES += \
-    GCamGo \
-    GalleryGo \
-    Gboard \
-    VancedManager
 
 $(call inherit-product, vendor/asus/X00QD/X00QD-vendor.mk)
