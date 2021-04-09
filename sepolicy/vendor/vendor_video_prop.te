@@ -1,0 +1,1 @@
+allow vendor_video_prop vendor_video_prop:file { read };
