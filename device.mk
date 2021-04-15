@@ -428,6 +428,7 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.target.rc \
+    apex_metadata.rc \
     ueventd.qcom.rc
 
 # RenderScript HAL

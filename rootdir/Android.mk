@@ -126,20 +126,10 @@ LOCAL_SRC_FILES    := etc/ueventd.qcom.rc
 LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR)
 include $(BUILD_PREBUILT)
 
-# ZenParts scripts
-
 include $(CLEAR_VARS)
-LOCAL_MODULE := init.zenparts.rc
-LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE       := apex_metadata.rc
+LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
-LOCAL_SRC_FILES := etc/init.zenparts.rc
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_ETC)/init/hw
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := init.zenparts.sh
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := ETC
-LOCAL_SRC_FILES := bin/init.zenparts.sh
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_EXECUTABLES)
+LOCAL_SRC_FILES    := etc/apex_metadata.rc
+LOCAL_MODULE_PATH  := $(TARGET_OUT)/etc/init
 include $(BUILD_PREBUILT)
