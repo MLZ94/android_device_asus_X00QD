@@ -15,8 +15,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_X00QD.mk
+    $(LOCAL_DIR)/dot_X00QD.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_X00QD-userdebug \
-    cherish_X00QD-eng
+    dot_X00QD-userdebug \
+    dot_X00QD-eng
