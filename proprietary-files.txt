@@ -1892,8 +1892,8 @@ vendor/lib64/libmmcamera_faceproc2.so
 vendor/lib64/libmmcamera_tintless_algo.so
 vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 
-# Charger - from ginkgo
-vendor/bin/hvdcp_opti|673f4c4eb8fa0ad5f274a18081c8619f4b775596
+# Charger
+vendor/bin/hvdcp_opti
 
 # Dirac - from Xiaomi
 vendor/lib/soundfx/libdirac.so|f63826a905b520fa524e4c1b147be7cf65240953

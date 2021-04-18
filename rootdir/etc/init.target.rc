@@ -302,9 +302,8 @@ on charger
 
 service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
      class main
-     user system
+     user root
      group system wakelock
-     capabilities BLOCK_SUSPEND WAKE_ALARM
 
 #Huaqin modify for disable sar in Indonesia by chenyijun5 at 2018/03/20 start
 on property:ro.config.versatility=ID
