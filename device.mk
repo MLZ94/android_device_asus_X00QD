@@ -585,4 +585,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     GCamGo
 
+# GMS priv-app permissions
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/privapp-permissions-google.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-google.xml
+
 $(call inherit-product, vendor/asus/X00QD/X00QD-vendor.mk)
