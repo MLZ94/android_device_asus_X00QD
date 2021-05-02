@@ -15,8 +15,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_X00QD.mk
+    $(LOCAL_DIR)/nezuko_X00QD.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_X00QD-userdebug \
-    aosp_X00QD-eng
+    nezuko_X00QD-userdebug \
+    nezuko_X00QD-eng

@@ -24,7 +24,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Inherit some AEX stuff.
 
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/nezuko/config/common_full_phone.mk)
 
 
 # Inherit from X00QD device
@@ -40,7 +40,7 @@ NEZUKO_DONATE := https://paypal.me/MLZdev
 PRODUCT_BRAND := asus
 PRODUCT_DEVICE := X00QD
 PRODUCT_MANUFACTURER := asus
-PRODUCT_NAME := aosp_X00QD
+PRODUCT_NAME := nezuko_X00QD
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
