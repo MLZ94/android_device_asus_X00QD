@@ -348,6 +348,10 @@ PRODUCT_PACKAGES += \
     libmediametrics \
     libregistermsext \
     mediametrics
+    
+# Perfd (dummy)
+PRODUCT_PACKAGES += \
+    libqti-perfd-client
 
 # Netutils
 PRODUCT_PACKAGES += \
