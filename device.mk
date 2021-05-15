@@ -80,9 +80,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
     android.hardware.audio.service \
     android.hardware.audio.effect@6.0-impl \
-    android.hardware.audio.effect@2.0-service \
-    android.hardware.soundtrigger@2.1-impl \
-    android.hardware.audio.common@2.0-util \
+    android.hardware.soundtrigger@2.3-impl \
     android.hardware.audio.common@5.0-util \
     audio.a2dp.default \
     audio.bluetooth.default \
@@ -188,8 +186,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service \
-    android.hardware.graphics.allocator@3.0-impl \
-    android.hardware.graphics.allocator@4.0-impl \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
     android.hardware.memtrack@1.0-impl \
