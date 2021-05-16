@@ -409,8 +409,8 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-dot
 
-PRODUCT_ENFORCE_RRO_TARGETS := \
-    framework-res
+PRODUCT_PACKAGES += \
+    NoCutoutOverlay
 
 # Power
 PRODUCT_PACKAGES += \
@@ -440,9 +440,6 @@ PRODUCT_PACKAGES += \
 # See https://source.android.com/devices/tech/config/namespaces_libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
-
-PRODUCT_PACKAGES += \
-    NoCutoutOverlay
 
 # Ramdisk
 PRODUCT_PACKAGES += \
