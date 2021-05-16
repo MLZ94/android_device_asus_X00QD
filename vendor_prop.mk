@@ -102,8 +102,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.is_type=4 \
     persist.ts.rtmakeup=1 \
     persist.vendor.camera.expose.aux=1 \
-    persist.vendor.camera.preview.ubwc=0 \
-    vendor.camera.aux.packagelist=org.codeaurora.snapcam
+    persist.vendor.camera.preview.ubwc=0
 
 # Camera HAL Setup
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -152,7 +151,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.egl=adreno \
     ro.hardware.vulkan=adreno \
     debug.sdm.support_writeback=0 \
-    debug.sf.early_phase_offset_ns=5000000 \
     debug.sf.hw=1 \
     debug.sf.latch_unsignaled=1 \
     debug.sf.disable_backpressure=1 \
