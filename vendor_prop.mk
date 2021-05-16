@@ -102,6 +102,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.is_type=4 \
     persist.ts.rtmakeup=1 \
     persist.vendor.camera.expose.aux=1 \
+    vidc.enc.dcvs.extra-buff-count=2 \
     persist.vendor.camera.preview.ubwc=0
 
 # Camera HAL Setup
@@ -185,8 +186,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.media.recorder-max-base-layer-fps=60 \
     vendor.vidc.enc.disable_bframes=1 \
     vendor.vidc.dec.enable.downscalar=1 \
-    vendor.vidc.enc.disable.pq=false \
-    vidc.enc.dcvs.extra-buff-count=2 \
     vidc.enc.target_support_bframe=1
 
 # Memory optimizations
