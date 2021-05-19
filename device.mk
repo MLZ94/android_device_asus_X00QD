@@ -268,6 +268,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
 
+#Bluetooth
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.btconfigstore@1.0.vendor \
+    vendor.qti.hardware.btconfigstore@2.0.vendor
+
 # IMS
 PRODUCT_PACKAGES += \
     ims-ext-common \
