@@ -1,4 +1,4 @@
-# FreeMarkW binderized lights HAL for Asus X00T & maybe X01B
+# FreeMarkW binderized lights HAL for Asus X00QD & maybe X01B
 # HAL has support for RG led and LCD Backlight
 # For perfect work need setup next options in framework:
 #       config_defaultNotificationColor = #ff00ff00
@@ -6,7 +6,7 @@
 #       config_notificationsBatteryMediumARGB = 0xFF50FF00
 #       config_notificationsBatteryFullARGB = 0xFF00FF00
 # Features for setup brightness, speed and color
-# are is disabled - X00T don't support it!
+# are is disabled - X00QD don't support it!
 # From Russia with LOVE :D
 
 on init
@@ -25,7 +25,8 @@ on init
     # LCD backlight
     chown system system /sys/class/leds/lcd-backlight/brightness
 
-service vendor.light-hal-2-0 /vendor/bin/hw/android.hardware.light@2.0-service.X00T
+service vendor.light-hal-2-0 /vendor/bin/hw/android.hardware.light@2.0-service.X00QD
+    interface android.hardware.light@2.0::ILight default
     class hal
     user system
     group system
