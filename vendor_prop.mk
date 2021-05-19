@@ -93,8 +93,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.bluetooth.emb_wp_mode=true \
     ro.bluetooth.wipower=true \
     vendor.bluetooth.soc=cherokee \
-    vendor.qcom.bluetooth.soc=cherokee \
-    persist.vendor.bt.aac_frm_ctl.enabled=true \
+    vendor.qcom.bluetooth.soc=cherokee
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \

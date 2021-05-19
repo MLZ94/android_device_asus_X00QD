@@ -20,13 +20,3 @@
     <bool name="profile_supported_hid_device">false</bool>
     <bool name="profile_supported_ba">true</bool>
 </resources>
-
-<config>
-    <component-override package="com.android.bluetooth" >
-        <component class=".avrcpcontroller.AvrcpControllerService" enabled="true" />
-        <component class=".ba.BATService" enabled="true" />
-        <component class=".hid.HidDeviceService" enabled="true" />
-        <component class=".sap.SapService" enabled="true" />
-    </component-override>
-</config>
-
