@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The p404OS Project
+# Copyright (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,10 +13,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+# ifeq ($(call my-dir),$(call project-path-for,qcom-data-ipa-cfg-mgr))
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/p404_X00QD.mk
+LOCAL_PATH := $(call my-dir)
 
-COMMON_LUNCH_CHOICES := \
-    p404_X00QD-userdebug \
-    p404_X00QD-eng
+include $(call first-makefiles-under,$(LOCAL_PATH))
+
+# endif
+
