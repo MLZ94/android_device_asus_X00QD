@@ -149,14 +149,17 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     $(TOPDIR)frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration.xml:/$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml \
-    $(TOPDIR)frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration.xml:/$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
     $(TOPDIR)frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:/$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     $(TOPDIR)frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:/$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
+
+TARGET_COMMON_QTI_COMPONENTS := \
+    bt
 
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0 \
     libbthost_if \
+    BluetoothQti \
     android.hardware.bluetooth.audio@2.0-impl \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     libldacBT_dec
@@ -473,9 +476,11 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES := $(LOCAL_PATH)
 PRODUCT_SOONG_NAMESPACES += \
+    hardware/qcom/media \
+    vendor/qcom/opensource/audio-hal/primary-hal\
     vendor/qcom/opensource/commonsys/packages/apps/Bluetooth \
-    vendor/qcom/opensource/commonsys/system/bt/conf
-    packages/apps/Bluetooth
+    vendor/qcom/opensource/commonsys/system/bt
+#    packages/apps/Bluetooth
 
 PRODUCT_BOARD_PLATFORM := sdm660
 PRODUCT_USES_QCOM_HARDWARE := true
