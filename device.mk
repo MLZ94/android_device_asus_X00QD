@@ -474,6 +474,7 @@ PRODUCT_SOONG_NAMESPACES := $(LOCAL_PATH)
 PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/commonsys/packages/apps/Bluetooth \
     vendor/qcom/opensource/commonsys/system/bt/conf
+    packages/apps/Bluetooth
 
 PRODUCT_BOARD_PLATFORM := sdm660
 PRODUCT_USES_QCOM_HARDWARE := true
