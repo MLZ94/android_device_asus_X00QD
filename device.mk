@@ -88,6 +88,7 @@ PRODUCT_PACKAGES += \
     libaudio-resampler \
     libaudioroute \
     libbatterylistener \
+    libbluetooth_qti \
     libcirrusspkrprot \
     libcomprcapture \
     libeffectsconfig \
