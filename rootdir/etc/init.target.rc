@@ -355,7 +355,7 @@ service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
      class main
      user root
      group system wakelock
-
+ 
 #Huaqin modify for disable sar in Indonesia by chenyijun5 at 2018/03/20 start
 on property:ro.config.versatility=ID
     write /sys/module/sx9310/parameters/sar_switcher 1
@@ -370,3 +370,7 @@ on property:sys.boot_completed=1
     write /sys/class/gpio/gpio12/value 0
     write /sys/class/gpio/unexport 12
 # Huaqin add for ZQL1820-84 by liunianliang at 2018/07/16 end
+
+on property:sys.boot_completed=1
+    # Enable EAS
+    write /proc/sys/kernel/sched_energy_aware 1
