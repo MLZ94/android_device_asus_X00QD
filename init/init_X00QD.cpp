@@ -107,8 +107,8 @@ void vendor_check_variant()
     product_name = "ASUS_X00QD";
     product_device = "ASUS_X00QD";
     product_model = "ASUS_X00QD";
-    build_fingerprint = "google/redfin/redfin:11/RQ2A.210505.003/7255357:user/release-keys";
-    build_description = "redfin-user 11 RQ2A.210505.003 7255357 release-keys";
+    build_fingerprint = "google/redfin/redfin:11/RQ3A.210605.005/7349499:user/release-keys";
+    build_description = "redfin-user 11 RQ3A.210605.005 7349499 release-keys";
 
     // Override props based on values set
     property_override("ro.build.description", build_description);
