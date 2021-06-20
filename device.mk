@@ -75,10 +75,10 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@6.0-impl \
-    android.hardware.audio.service \
-    android.hardware.audio.effect@6.0-impl \
-    android.hardware.audio.common@5.0-util \
+    android.hardware.audio@4.0-impl \
+    android.hardware.audio@2.0-service \
+    android.hardware.audio.effect@4.0-impl \
+    android.hardware.audio.effect@2.0-service \
     audio.a2dp.default \
     audio.bluetooth.default \
     audio.primary.sdm660 \
@@ -161,7 +161,7 @@ PRODUCT_PACKAGES += \
     libbthost_if \
     BluetoothQti \
     android.hardware.bluetooth.audio@2.0-impl \
-    vendor.qti.hardware.bluetooth_audio@2.0.vendor \
+    vendor.qti.hardware.bluetooth_audio@2.1.vendor \
     libldacBT_dec
 
 # Camera
