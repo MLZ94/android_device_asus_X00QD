@@ -34,6 +34,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Official build
+NEZUKO_BUILD_TYPE := OFFICIAL
 NEZUKO_MAINTAINER := MLZ94
 NEZUKO_DONATE := https://paypal.me/MLZdev
 
