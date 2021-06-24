@@ -30,8 +30,8 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 TARGET_GAPPS_ARCH := arm64
 
-$(call inherit-product, vendor/google/pixel/config.mk)
-$(call inherit-product, vendor/google/gms/config.mk)
+#$(call inherit-product, vendor/google/pixel/config.mk)
+#$(call inherit-product, vendor/google/gms/config.mk)
 
 
 PRODUCT_BRAND := asus
