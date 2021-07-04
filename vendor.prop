@@ -250,10 +250,6 @@ persist.timed.enable=true
 # USB
 ro.usb.firstboot.config=diag,serial_cdev,rmnet,adb
 
-# WFD display
-debug.sf.enable_hwc_vds=1
-persist.sys.wfd.virtual=0
-
 # ZRAM disk
 ro.vendor.qti.config.zram=true
 
