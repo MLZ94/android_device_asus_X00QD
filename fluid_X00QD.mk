@@ -24,7 +24,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Inherit some AEX stuff.
 
-$(call inherit-product, vendor/nezuko/config/common_full_phone.mk)
+$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
 
 
 # Inherit from X00QD device
@@ -33,15 +33,16 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Official build
-NEZUKO_BUILD_TYPE := OFFICIAL
-NEZUKO_MAINTAINER := MLZ94
-NEZUKO_DONATE := https://paypal.me/MLZdev
+# Fluid props
+PRODUCT_PRODUCT_PROPERTIES += \
+	ro.fluid.maintainer=MLZ94 \
+	ro.fluid.cpu=SDM660
+TARGET_INCLUDE_GAPPS := false
 
 PRODUCT_BRAND := asus
 PRODUCT_DEVICE := X00QD
 PRODUCT_MANUFACTURER := asus
-PRODUCT_NAME := nezuko_X00QD
+PRODUCT_NAME := fluid_X00QD
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 

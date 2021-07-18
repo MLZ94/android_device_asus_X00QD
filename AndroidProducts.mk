@@ -15,8 +15,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nezuko_X00QD.mk
+    $(LOCAL_DIR)/fluid_X00QD.mk
 
 COMMON_LUNCH_CHOICES := \
-    nezuko_X00QD-userdebug \
-    nezuko_X00QD-eng
+    fluid_X00QD-userdebug \
+    fluid_X00QD-eng
