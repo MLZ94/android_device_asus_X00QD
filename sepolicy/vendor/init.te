@@ -1,1 +1,2 @@
 allow init proc:file { write };
+allow init apex_metadata_file:dir create_dir_perms;
