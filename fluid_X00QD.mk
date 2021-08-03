@@ -33,6 +33,9 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Official
+FLUID_BUILD_TYPE := OFFICIAL
+
 # Fluid props
 PRODUCT_PRODUCT_PROPERTIES += \
 	ro.fluid.maintainer=MLZ94 \
