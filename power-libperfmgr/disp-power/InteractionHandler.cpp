@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.power@-service.xiaomi_sdm660-libperfmgr"
+#define LOG_TAG "android.hardware.power@-service.asus_X00QD-libperfmgr"
 #define ATRACE_TAG (ATRACE_TAG_POWER | ATRACE_TAG_HAL)
 
 #include <fcntl.h>
