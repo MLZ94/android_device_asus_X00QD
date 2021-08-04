@@ -23,20 +23,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Inherit some common aosp stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/dot/config/common.mk)
 
 # Inherit from X00QD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+TARGET_BOOT_ANIMATION_RES := 1080
+
 PRODUCT_BRAND := asus
 PRODUCT_DEVICE := X00QD
 PRODUCT_MANUFACTURER := asus
-PRODUCT_NAME := lineage_X00QD
+PRODUCT_NAME := dot_X00QD
 
-# Gapps
-TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_FACE_UNLOCK := true
+TARGET_INCLUDE_PIXEL_CHARGER := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
@@ -51,10 +52,3 @@ BUILD_FINGERPRINT := google/redfin/redfin:11/RQ3A.210805.001.A1/7474174:user/rel
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
-
-# Sakura flags
-SAKURA_OFFICIAL := true
-SAKURA_MAINTAINER := Henrique Ferreira
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SCREEN_HEIGHT := 2160
-TARGET_SCREEN_WIDTH := 1080
