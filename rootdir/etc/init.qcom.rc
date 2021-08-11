@@ -255,6 +255,10 @@ on post-fs-data
     # Create directory used for dump collection
     mkdir /data/vendor/ssrdump 0770 root system
 
+    # Clear existing log and start the service
+    rm /cache/boot_log.txt
+    start logger
+
     # Create directory used by display clients
     mkdir /data/vendor/display 0770 system graphics
 
@@ -470,6 +474,13 @@ service vendor.ss_ramdump /vendor/bin/subsystem_ramdump
     group system
     disabled
 
+service logger /system/bin/logcat -b all -D -f /cache/boot_log.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
 on property:ro.vendor.iocgrp.config=1
     mkdir /dev/blkio
     mount cgroup none /dev/blkio blkio
@@ -507,6 +518,7 @@ on property:persist.vendor.ssr.enable_ramdumps=0
 
 on property:sys.boot_completed=1
     write /dev/kmsg "Boot completed "
+    stop logger
     #Reset read ahead for dm-0 and dm-1 to 128kb
     write /sys/block/dm-0/queue/read_ahead_kb 128
     write /sys/block/dm-1/queue/read_ahead_kb 128
