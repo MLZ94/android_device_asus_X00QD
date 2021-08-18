@@ -186,11 +186,7 @@
       "PowerHint": "INTERACTION",
       "Node": "TASchedtuneBoost",
       "Duration": 0,
-<<<<<<< HEAD:power-libperfmgr/powerhint.json
-      "Value": "15"
-=======
       "Value": "5"
->>>>>>> 3c7b8516b (sdm660-common: Adjust TAStuneboost init value):power-libperfmgr/sdm660_powerhint.json
     },
     {
       "PowerHint": "INTERACTION",
@@ -231,7 +227,7 @@
     {
       "PowerHint": "LAUNCH",
       "Node": "PMQoSCpuDmaLatency",
-      "Duration": 5000,
+      "Duration": 1500,
       "Value": "2c"
     },
     {
