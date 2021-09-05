@@ -260,7 +260,7 @@ PRODUCT_PACKAGES += \
     libloc_core \
     libloc_pla \
     libsensorndkbridge \
-    libvehiclenetwork-native
+    libsynergy_loc_api
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
