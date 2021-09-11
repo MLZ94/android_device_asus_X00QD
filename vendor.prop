@@ -125,9 +125,6 @@ persist.vendor.dpm.nsrm.bkg.evt=3955
 # DRM
 drm.service.enabled=true
 
-# Enable stm-events
-persist.debug.coresight.config=stm-events
-
 # FM
 vendor.fm.a2dp.conc.disabled=false
 
