@@ -31,6 +31,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_BRAND := asus
+PRODUCT_MODEL := Zenfone 5
 PRODUCT_DEVICE := X00QD
 PRODUCT_MANUFACTURER := asus
 PRODUCT_NAME := dot_X00QD
@@ -45,6 +46,7 @@ TARGET_VENDOR := asus
 TARGET_VENDOR_PRODUCT_NAME := X00QD
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=WW_X00QD \
     PRIVATE_BUILD_DESC="redfin-user 11 RQ3A.210905.001 7511028 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
