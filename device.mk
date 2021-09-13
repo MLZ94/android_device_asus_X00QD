@@ -407,9 +407,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
 
-PRODUCT_PACKAGES += \
-    NoCutoutOverlay
-
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.asus_X00QD-libperfmgr \
