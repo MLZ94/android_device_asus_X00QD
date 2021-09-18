@@ -510,9 +510,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     $(LOCAL_PATH)/configs/sensors/android.hardware.sensors@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@1.0-service.rc
 
-# System properties
--include $(LOCAL_PATH)/system_prop.mk
-
 # Telephony
 PRODUCT_PACKAGES += \
     telephony-ext
@@ -546,9 +543,6 @@ PRODUCT_PACKAGES += \
 # USB
 PRODUCT_PACKAGES += \
 	android.hardware.usb@1.0-service.basic
-
-# Vendor properties
--include $(LOCAL_PATH)/vendor_prop.mk
 
 # Vibrator
 PRODUCT_PACKAGES += \
