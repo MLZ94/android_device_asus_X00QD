@@ -1,2 +1,15 @@
+# GMS
+ro.com.google.clientidbase.ms=android-asus-tpin
+ro.com.google.rlzbrandcode=ASUP
+ro.com.google.rlz_ap_whitelist=y0,y5,y6,y7,y9
+
+# QC framework value-adds
+ro.vendor.qti.va_aosp.support=1
+
+# Huaqin project
+ro.hq.project=ZQL1650
+
 # GBoard
 ro.com.google.ime.kb_pad_port_b=1
+
+
