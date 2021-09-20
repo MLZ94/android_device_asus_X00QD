@@ -96,10 +96,6 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 # CNE and DPM
 BOARD_USES_QCNE := true
 
-# Crypto
-TARGET_HW_DISK_ENCRYPTION := true
-TARGET_CRYPTFS_HW_PATH ?= vendor/qcom/opensource/cryptfs_hw
-
 # Display
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
