@@ -71,10 +71,6 @@ vendor/lib/libaudioparsers.so
 vendor/lib/libdrc.so
 vendor/lib/libqtigef.so
 vendor/lib/libsurround_3mic_proc.so
-vendor/lib/soundfx/libasphere.so
-vendor/lib/soundfx/libaudiopreprocessing.so
-vendor/lib/soundfx/libqcbassboost.so
-vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so
@@ -85,10 +81,6 @@ vendor/lib64/libaudioalsa.so
 vendor/lib64/libaudioparsers.so
 -vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libqtigef.so
-vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libaudiopreprocessing.so
-vendor/lib64/soundfx/libqcbassboost.so
-vendor/lib64/soundfx/libqcvirt.so
 
 # Audio-ACDB
 vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
@@ -151,7 +143,6 @@ vendor/lib/soundfx/libqcomvoiceprocessing.so
 vendor/lib/soundfx/libvolumelistener.so
 vendor/lib64/hw/audio.primary.default.so
 vendor/lib64/hw/audio.primary.sdm660.so
-vendor/lib64/libtinycompress_vendor.so
 vendor/lib64/soundfx/libqcompostprocbundle.so
 vendor/lib64/soundfx/libqcomvisualizer.so
 vendor/lib64/soundfx/libqcomvoiceprocessing.so
@@ -188,19 +179,14 @@ etc/cne/Nexus/ROW/ROW_profiles.xml
 etc/cne/Nexus/VZW/VZW_profiles.xml
 product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml
 product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml
-product/framework/vendor.qti.data.factory-V1.0-java.jar
-product/framework/vendor.qti.data.factory-V2.0-java.jar
 product/framework/vendor.qti.hardware.data.connection-V1.0-java.jar
 product/framework/vendor.qti.hardware.data.connection-V1.1-java.jar
 product/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar
 product/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar
-product/lib/vendor.qti.data.factory@1.0.so
-product/lib/vendor.qti.data.factory@2.0.so
 product/lib/vendor.qti.hardware.data.connection@1.0.so
 product/lib/vendor.qti.hardware.data.connection@1.1.so
 product/lib/vendor.qti.hardware.data.dynamicdds@1.0.so
 product/lib/vendor.qti.hardware.data.iwlan@1.0.so
-product/lib64/vendor.qti.data.factory@1.0.so
 product/lib64/vendor.qti.data.factory@2.0.so
 product/lib64/vendor.qti.hardware.data.connection@1.0.so
 product/lib64/vendor.qti.hardware.data.connection@1.1.so
@@ -2012,7 +1998,6 @@ vendor/lib64/mediadrm/libdrmclearkeyplugin.so
 # Display-Hardware
 -lib/libsdm-disp-apis.so
 -lib64/libsdm-disp-apis.so
-vendor/lib/hw/gralloc.default.so
 vendor/lib/libdrm.so
 vendor/lib/libdrmutils.so
 vendor/lib/libgpu_tonemapper.so
@@ -2022,7 +2007,6 @@ vendor/lib/libqservice.so
 vendor/lib/libsdmcore.so
 vendor/lib/libsdmextension.so
 vendor/lib/libsdmutils.so
-vendor/lib64/hw/gralloc.default.so
 vendor/lib64/libdrm.so
 vendor/lib64/libdrmutils.so
 vendor/lib64/libgpu_tonemapper.so
@@ -2059,8 +2043,6 @@ vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # Factory
-product/framework/vendor.qti.hardware.factory-V1.0-java.jar
-product/framework/vendor.qti.hardware.factory-V1.1-java.jar
 product/lib/vendor.qti.hardware.factory@1.0.so
 product/lib/vendor.qti.hardware.factory@1.1.so
 product/lib64/vendor.qti.hardware.factory@1.0.so
@@ -2416,46 +2398,11 @@ vendor/odm/etc/com.nxp.mifare.xml
 vendor/lib/vendor.qti.power.pasrmanager@1.0.so
 vendor/lib64/vendor.qti.power.pasrmanager@1.0.so
 
-# Perf
-etc/perf/wlc_model.tflite
-lib/libqti-perfd-client_system.so
-lib/libqti-util_system.so
-lib64/libqti-perfd-client_system.so
-lib64/libqti-util_system.so
-product/lib/vendor.qti.hardware.perf@1.0.so
-product/lib/vendor.qti.hardware.perf@2.0.so
-product/lib64/vendor.qti.hardware.perf@1.0.so
-product/lib64/vendor.qti.hardware.perf@2.0.so
-vendor/bin/hw/vendor.qti.hardware.perf@2.0-service
-vendor/bin/msm_irqbalance
-vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc
-vendor/etc/perf/commonresourceconfigs.xml
-vendor/etc/perf/perfboostsconfig.xml
-vendor/etc/perf/perfconfigstore.xml
-vendor/etc/perf/targetconfig.xml
-vendor/etc/perf/targetresourceconfigs.xml
-vendor/lib/libperfgluelayer.so
-vendor/lib/libqti-perfd.so
-vendor/lib/libqti-util.so
-vendor/lib/libqti-utils.so
-vendor/lib64/libadaptlaunch.so
-vendor/lib64/liblearningmodule.so
-vendor/lib64/libmeters-ns.so
-vendor/lib64/libmeters.so
-vendor/lib64/libperfgluelayer.so
-vendor/lib64/libqti-perfd.so
-vendor/lib64/libqti-util.so
-vendor/lib64/libqti-utils.so
-
-# Perf-IOP
-vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so
-vendor/lib/libqti-iopd-client.so
-vendor/lib/vendor.qti.hardware.iop@1.0.so
-vendor/lib/vendor.qti.hardware.iop@2.0.so
-vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so
-vendor/lib64/libqti-iopd-client.so
-vendor/lib64/vendor.qti.hardware.iop@1.0.so
-vendor/lib64/vendor.qti.hardware.iop@2.0.so
+# Perf - from lge phoenix_sprout RKQ1.201123.002
+vendor/lib64/libadaptlaunch.so|ab0c0545283ae165ad91fd8fdd9e87e14f660965
+vendor/lib64/libappclassifier.so|b78aa1e1557080bb537c3778535ea38d7d0c0d2a
+vendor/lib64/libgameoptfeature.so|d05d3851bf429587cb3baf3afe3692767f08d4b9
+vendor/lib64/liblearningmodule.so|435927680b8137f6c953d979be4aeb81cf8c9042
 
 # Peripheral
 vendor/bin/pm-proxy
@@ -2814,7 +2761,6 @@ vendor/bin/sensors.qti
 vendor/lib/hw/activity_recognition.sdm660.so
 vendor/lib/hw/sensors.sdm660_64.so
 vendor/lib/libsensor1.so
-vendor/lib/libsensorndkbridge.so
 vendor/lib/libsensor_reg.so
 vendor/lib/libssc_default_listener.so
 vendor/lib/sensors.ALSPS.so
@@ -2823,7 +2769,6 @@ vendor/lib/sensor_calibrate.so
 vendor/lib64/hw/activity_recognition.sdm660.so
 vendor/lib64/hw/sensors.sdm660_64.so
 vendor/lib64/libsensor1.so
-vendor/lib64/libsensorndkbridge.so
 vendor/lib64/libsensor_reg.so
 vendor/lib64/libssc_default_listener.so
 vendor/lib64/sensors.ALSPS.so
@@ -2848,18 +2793,10 @@ vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # Thermal
-vendor/bin/hw/android.hardware.thermal@2.0-service.mock
 vendor/bin/thermal-engine
-vendor/etc/init/android.hardware.thermal@2.0-service.rc
-vendor/etc/thermal-engine.conf
-vendor/etc/vintf/manifest/android.hardware.thermal@2.0-service.xml
 -vendor/lib/libthermalclient.so
 -vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalioctl.so
-
-# Thermal-Hardware
-vendor/lib/hw/thermal.sdm660.so
-vendor/lib64/hw/thermal.sdm660.so
 
 # Time
 -vendor/app/TimeService/TimeService.apk
@@ -2896,18 +2833,6 @@ vendor/lib/libstreamparser.so
 vendor/lib/libUBWC.so
 vendor/lib64/libstreamparser.so
 vendor/lib64/libUBWC.so
-
-# Vibrator
-vendor/bin/hw/android.hardware.vibrator@1.0-service
-vendor/etc/init/android.hardware.vibrator@1.0-service.rc
-vendor/lib/hw/android.hardware.vibrator@1.0-impl.so
-vendor/lib/hw/vibrator.default.so
-vendor/lib64/hw/android.hardware.vibrator@1.0-impl.so
-vendor/lib64/hw/vibrator.default.so
-
-# Vivo
-vendor/etc/BR/VIVO/Launcher/default_workspace/default_allapp.xml
-vendor/etc/BR/VIVO/Launcher/default_workspace/phone_workspace.xml
 
 # Voice
 vendor/lib/vendor.qti.voiceprint@1.0.so
@@ -3008,8 +2933,6 @@ vendor/bin/ftmtest
 vendor/bin/hal_proxy_daemon
 vendor/bin/hw/vendor.ims.airtrigger@1.0-service
 vendor/bin/hw/vendor.ims.airtrigger@1.1-service
-vendor/bin/hw/vendor.ims.glovemode@1.0-service
-vendor/bin/hw/vendor.qti.hardware.cryptfshw@1.0-service-qti
 vendor/bin/ipacm-diag
 vendor/bin/KmInstallKeybox
 vendor/bin/mm-qjpeg-dec-test
@@ -3034,24 +2957,10 @@ vendor/bin/wdsdaemon
 vendor/bin/wigighalsvc
 vendor/bin/xtwifi-client
 vendor/bin/xtwifi-inet-agent
-vendor/etc/BR/TIM_BR/Launcher/default_workspace/default_allapp.xml
-vendor/etc/BR/TIM_BR/Launcher/default_workspace/phone_workspace.xml
-vendor/etc/EU/TIM/Launcher/default_workspace/default_allapp.xml
-vendor/etc/EU/TIM/Launcher/default_workspace/phone_workspace.xml
-vendor/etc/EU/VF_IT/Launcher/default_workspace/default_allapp.xml
-vendor/etc/EU/VF_IT/Launcher/default_workspace/phone_workspace.xml
-vendor/etc/EU/WIND/Launcher/default_workspace/default_allapp.xml
-vendor/etc/EU/WIND/Launcher/default_workspace/phone_workspace.xml
 vendor/etc/fallback_fonts.xml
-vendor/etc/Generic/Launcher/default_workspace/default_allapp.xml
-vendor/etc/Generic/Launcher/default_workspace/phone_workspace.xml
 vendor/etc/hostapd/hostapd.accept
 vendor/etc/hostapd/hostapd.deny
 vendor/etc/hostapd/hostapd_default.conf
-vendor/etc/ID/ASUS/Launcher/default_workspace/default_allapp.xml
-vendor/etc/ID/ASUS/Launcher/default_workspace/phone_workspace.xml
-vendor/etc/IN/ASUS/Launcher/default_workspace/default_allapp.xml
-vendor/etc/IN/ASUS/Launcher/default_workspace/phone_workspace.xml
 vendor/etc/init/dataadpl.rc
 vendor/etc/init/dataqti.rc
 vendor/etc/init/dpmQmiMgr.rc
@@ -3068,17 +2977,8 @@ vendor/etc/init/port-bridge.rc
 vendor/etc/init/rild.rc
 vendor/etc/init/vendor.ims.airtrigger@1.0-service.rc
 vendor/etc/init/vendor.ims.airtrigger@1.1-service.rc
-vendor/etc/init/vendor.ims.glovemode@1.0-service.rc
-vendor/etc/init/vendor.qti.hardware.cryptfshw@1.0-service-qti.rc
 vendor/etc/init/vendor.qti.hardware.wigig.supptunnel@1.0-service.rc
 vendor/etc/init/vendor.rild.rc
-vendor/lib/android.hardware.audio.common-util.so
-vendor/lib/android.hardware.audio.common@2.0-util.so
-vendor/lib/android.hardware.audio.common@4.0-util.so
-vendor/lib/android.hardware.audio.common@5.0-util.so
-vendor/lib/android.hardware.camera.provider@2.4-external.so
-vendor/lib/android.hardware.camera.provider@2.4-legacy.so
-vendor/lib/btaudio_offload_if.so
 vendor/lib/dualcali_dump.bin
 vendor/lib/libbatterylistener.so
 vendor/lib/libcacertclient.so
@@ -3133,17 +3033,8 @@ vendor/lib/libvpx.so
 vendor/lib/libwifi-hal-ctrl.so
 vendor/lib/qtibus.so
 vendor/lib/qtimutex.so
-vendor/lib/soundfx/libicepower.so
 vendor/lib/vendor.qti.hardware.cacert@1.0.so
-vendor/lib/vendor.qti.hardware.cryptfshw@1.0.so
 vendor/lib/vendor.qti.hardware.sigma_miracast@1.0.so
-vendor/lib64/android.hardware.audio.common-util.so
-vendor/lib64/android.hardware.audio.common@2.0-util.so
-vendor/lib64/android.hardware.audio.common@4.0-util.so
-vendor/lib64/android.hardware.audio.common@5.0-util.so
-vendor/lib64/android.hardware.camera.provider@2.4-external.so
-vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
-vendor/lib64/btaudio_offload_if.so
 vendor/lib64/libappclassifier.so
 vendor/lib64/libbatterylistener.so
 vendor/lib64/libcacertclient.so
@@ -3178,5 +3069,4 @@ vendor/lib64/vendor.ims.airtrigger@1.1.so
 vendor/lib64/vendor.ims.glovemode@1.0.so
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so
-vendor/lib64/vendor.qti.hardware.cryptfshw@1.0.so
 vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so
