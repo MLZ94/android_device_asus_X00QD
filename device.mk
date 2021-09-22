@@ -37,6 +37,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml \
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml \
     frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.accelerometer.xml \
@@ -78,37 +79,30 @@ PRODUCT_COPY_FILES += \
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
-    android.hardware.audio.service \
+    android.hardware.audio@2.0-service \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.effect@2.0-service \
-    android.hardware.soundtrigger@2.2-impl \
-    android.hardware.audio.common@2.0-util \
-    android.hardware.audio.common@5.0-util \
+    android.hardware.soundtrigger@2.2-impl
+
+PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.bluetooth.default \
     audio.primary.sdm660 \
     audio.r_submix.default \
     audio.usb.default \
-    liba2dpoffload \
     libaudio-resampler \
     libaudioroute \
-    libbatterylistener \
-    libcirrusspkrprot \
-    libcomprcapture \
-    libeffectsconfig \
-    libexthwplugin \
-    libhdmiedid \
-    libhfp \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libldacBT_bco \
+    libvolumelistener
+
+PRODUCT_PACKAGES += \
+    libhdmiedid \
+    libhfp \
     libsndmonitor \
     libspkrprot \
-    libssrec \
-    libvolumelistener \
-    libtinycompress \
-    libtinycompress.vendor
+    libssrec
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_gain.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_gain.conf \
@@ -157,12 +151,8 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0 \
-    libbthost_if \
     android.hardware.bluetooth.audio@2.0-impl \
-    vendor.qti.hardware.bluetooth_audio@2.0.vendor \
-    vendor.qti.hardware.btconfigstore@1.0.vendor \
-    libldacBT_dec
+    vendor.qti.hardware.btconfigstore@1.0.vendor
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -200,18 +190,20 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     vendor.display.config@2.0 \
-    vendor.display.config@2.0.vendor \
+    vendor.display.config@2.0.vendor
+    
+PRODUCT_PACKAGES += \
     copybit.sdm660 \
     gralloc.sdm660 \
     hwcomposer.sdm660 \
+    memtrack.sdm660 \
     libdisplayconfig \
-    liboverlay \
     libdisplayconfig.qti \
     libdisplayconfig.qti.vendor \
+    liboverlay \
     libqdMetaData \
     libvulkan \
     libtinyxml \
-    memtrack.sdm660 \
     libgenlock
 
 # DPM
@@ -232,9 +224,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service \
     fingerprintd
-
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
 # FM
 PRODUCT_PACKAGES += \
@@ -374,11 +363,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
 
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.2-service \
+    android.hardware.nfc@1.2-service
+    
+PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     NfcNci \
     SecureElement \
-    Tag \
+    Tag
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -467,13 +458,15 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.4 \
     android.hardware.radio.config@1.2 \
     android.hardware.secure_element@1.0 \
-    rild \
     librmnetctl \
-    libxml2 \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
-    qti_telephony_utils.xml
+    qti_telephony_utils.xml \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
 
 # QCOM
 PRODUCT_COPY_FILES += \
@@ -483,7 +476,7 @@ PRODUCT_COPY_FILES += \
 
 # QMI
 PRODUCT_PACKAGES += \
-    libjson \
+    libjson
 
 # Soong namespaces
 PRODUCT_BOARD_PLATFORM := sdm660
@@ -500,13 +493,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
-
-# Telephony
-PRODUCT_PACKAGES += \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
 
 # Tetheroffload
 PRODUCT_PACKAGES += \
