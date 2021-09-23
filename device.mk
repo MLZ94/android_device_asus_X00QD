@@ -403,7 +403,7 @@ PRODUCT_PACKAGES += \
     
 # Powerhint
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/power-libperfmgr/sdm636_powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+    $(LOCAL_PATH)/power-libperfmgr/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
     
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
