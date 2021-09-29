@@ -238,6 +238,10 @@ debug.sf.early_app_phase_offset_ns=1500000
 debug.sf.early_gl_phase_offset_ns=3000000
 debug.sf.early_gl_app_phase_offset_ns=1500000
 
+# Set system properties identifying the chipset
+ro.soc.manufacturer=QTI
+ro.soc.model=SDM660
+
 # System prop for UBWC
 vendor.video.disable.ubwc=1
 
@@ -249,10 +253,6 @@ ro.usb.firstboot.config=diag,serial_cdev,rmnet,adb
 
 # ZRAM disk
 ro.vendor.qti.config.zram=true
-
-# Soc
-ro.soc.manufacturer=Qualcomm
-ro.soc.model=SDM660
 
 # USB debugging at boot
 persist.sys.usb.config=mtp,adb
