@@ -199,8 +199,10 @@ VENDOR_SECURITY_PATCH := 2020-05-05
 
 # SELinux
 SELINUX_IGNORE_NEVERALLOWS := true
-include device/qcom/sepolicy-legacy-um/SEPolicy.mk
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+#include device/qcom/sepolicy-legacy-um/SEPolicy.mk
+#BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-minimal
 
 # Treble
 BOARD_VNDK_VERSION := current
