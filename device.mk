@@ -179,8 +179,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    vendor.display.config@2.0 \
-    vendor.display.config@2.0.vendor
+    vendor.display.config@1.3
     
 PRODUCT_PACKAGES += \
     copybit.sdm660 \
@@ -188,9 +187,6 @@ PRODUCT_PACKAGES += \
     hwcomposer.sdm660 \
     memtrack.sdm660 \
     libdisplayconfig \
-    libdisplayconfig.qti \
-    libdisplayconfig.qti.vendor \
-    liboverlay \
     libqdMetaData \
     libvulkan \
     libtinyxml \
@@ -534,9 +530,7 @@ PRODUCT_PACKAGES += \
 
 # WFD
 PRODUCT_PACKAGES += \
-    libnl \
-    libshim_wfdmmsink \
-    libstagefright_enc_common
+    libnl
 
 PRODUCT_BOOT_JARS += \
     WfdCommon

@@ -57,15 +57,6 @@ fi
 # Initialize the helper
 setup_vendor "$DEVICE" "$VENDOR" "$DOT_ROOT" false "$CLEAN_VENDOR"
 
-function blob_fixup() {
-    case "${1}" in
-        lib/libwfdmmsink.so)
-            "${PATCHELF}" --add-needed "libshim_wfdmmsink.so" "${2}"
-            ;;
-    esac
-}
-
-
 extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
 
 "$MY_DIR"/setup-makefiles.sh
