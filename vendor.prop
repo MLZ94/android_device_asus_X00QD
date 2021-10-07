@@ -255,6 +255,10 @@ persist.sys.wfd.virtual=0
 # ZRAM disk
 ro.vendor.qti.config.zram=true
 
+# Soc
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=SDM660
+
 # USB debugging at boot
 persist.sys.usb.config=mtp,adb
 ro.adb.secure=0
