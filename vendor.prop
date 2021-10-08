@@ -148,11 +148,6 @@ ro.vendor.perf.scroll_opt=true
 persist.dbg.volte_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
-# Enable blurs
-ro.surface_flinger.supports_background_blur=1 
-ro.sf.blurs_are_expensive=1 
-persist.sys.sf.disable_blurs=1
-
 # Media
 debug.stagefright.omx_default_rank.sw-audio=1
 debug.stagefright.omx_default_rank=0
