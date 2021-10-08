@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/dot_X00QD.mk
+    $(LOCAL_DIR)/aosp_X00QD.mk
 
 COMMON_LUNCH_CHOICES := \
-    dot_X00QD-userdebug \
-    dot_X00QD-eng \
-    dot_X00QD-user 
+    aosp_X00QD-userdebug \
+    aosp_X00QD-eng \
+    aosp_X00QD-user 
