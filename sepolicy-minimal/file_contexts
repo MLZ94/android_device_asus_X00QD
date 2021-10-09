@@ -3,3 +3,8 @@
 /dsp(/.*)?                      u:object_r:adsprpcd_file:s0
 /firmware(/.*)?                 u:object_r:firmware_file:s0
 /persist(/.*)?                  u:object_r:persist_file:s0
+/(ADF|vendor/ADF)               u:object_r:adf_file:s0
+/(APD|vendor/APD)               u:object_r:apd_file:s0
+/(asdf|vendor/asdf)             u:object_r:asdf_file:s0
+/(factory|vendor/factory)       u:object_r:fac_file:s0
+/xrom                           u:object_r:system_file:s0
