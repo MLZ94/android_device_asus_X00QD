@@ -528,6 +528,12 @@ PRODUCT_PACKAGES += \
     IPACM_cfg.xml \
     libipanat \
     liboffloadhal
+    
+# Tin
+PRODUCT_PACKAGES += \
+    libtinyxml \
+    tinyxml2 \
+    libxml2 
 
 # Thermal
 PRODUCT_PACKAGES += \
