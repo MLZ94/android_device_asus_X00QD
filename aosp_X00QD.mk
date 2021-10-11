@@ -43,10 +43,10 @@ TARGET_VENDOR_PRODUCT_NAME := X00QD
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=WW_X00QD \
-    PRIVATE_BUILD_DESC="redfin-user 11 RQ3A.211001.001 7641976 release-keys"
+    PRIVATE_BUILD_DESC="redfin-user 12 SPB5.210812.002 7671067 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := google/redfin/redfin:11/RQ3A.211001.001/7641976:user/release-keys
+BUILD_FINGERPRINT := google/redfin/redfin:12/SPB5.210812.002/7671067:user/release-keys
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
