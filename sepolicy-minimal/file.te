@@ -1,8 +1,0 @@
-type adsprpcd_file, file_type;
-type bt_firmware_file, file_type;
-type firmware_file, file_type;
-type persist_file, file_type;
-type adf_file, vendor_file_type, file_type;
-type apd_file, file_type;
-type asdf_file, file_type;
-type fac_file, vendor_file_type, file_type;
