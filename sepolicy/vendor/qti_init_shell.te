@@ -5,4 +5,3 @@ allow qti_init_shell sysfs_usb_rndis:file write;
 
 set_prop(qti_init_shell, debug_prop)
 set_prop(qti_init_shell, radio_prop)
-set_prop(qti_init_shell, system_radio_prop)
