@@ -452,6 +452,7 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.usb.sh \
     init.qti.ims.sh \
+    init.zenparts.sh \
     move_time_data.sh \
     move_wifi_data.sh \
     fstab.qcom \
@@ -460,7 +461,7 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.target.rc \
-    apex_metadata.rc \
+    init.zenparts.rc \
     ueventd.qcom.rc
 
 # RenderScript HAL
