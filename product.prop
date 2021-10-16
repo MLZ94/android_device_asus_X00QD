@@ -2,3 +2,6 @@
 debug.hwui.renderer=skiagl
 debug.renderengine.backend=skiaglthreaded
 renderthread.skia.reduceopstasksplitting=true
+
+# IORap
+persist.device_config.runtime_native_boot.iorap_readahead_enable=true
