@@ -13,8 +13,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+package {
+    default_applicable_licenses: ["Android-Apache-2.0"],
+}
+
 cc_library {
-    name: "libdisppower",
+    name: "libdisppower-asus_X00QD",
     proprietary: true,
     srcs: [
         "disp-power/InteractionHandler.cpp",
@@ -35,19 +39,22 @@ cc_binary {
     vintf_fragments: ["aidl/android.hardware.power-service.asus_X00QD.xml"],
     vendor: true,
     shared_libs: [
-        "android.hardware.power-V1-ndk_platform",
+        "android.hardware.power-V2-ndk_platform",
         "libbase",
         "libcutils",
         "liblog",
         "libutils",
         "libbinder_ndk",
-        "libdisppower",
+        "libdisppower-asus_X00QD",
         "libperfmgr",
+        "libprocessgroup",
         "pixel-power-ext-V1-ndk_platform",
     ],
     srcs: [
         "aidl/service.cpp",
         "aidl/Power.cpp",
         "aidl/PowerExt.cpp",
+        "aidl/PowerHintSession.cpp",
+        "aidl/PowerSessionManager.cpp",
     ],
 }
