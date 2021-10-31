@@ -255,7 +255,7 @@ on boot
     mkdir /mnt/vendor/persist/hvdcp_opti 0770 root system
 
     # Mic gain
-    write /sys/kernel/sound_control/mic_gain 8
+    write /sys/kernel/sound_control/mic_gain 16
 
 # msm specific files that need to be created on /data
 on post-fs-data
