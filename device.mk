@@ -191,7 +191,7 @@ PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.0.vendor \
     android.hardware.media.c2@1.1.vendor \
     vendor.display.config@1.3
-    
+
 PRODUCT_PACKAGES += \
     copybit.sdm660 \
     gralloc.sdm660 \
@@ -203,6 +203,11 @@ PRODUCT_PACKAGES += \
     libvulkan \
     libtinyxml \
     libgenlock
+    
+# Display Device Config
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/displayconfig/display_id_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_0.xml
+
 
 # DPM
 PRODUCT_PACKAGES += \
