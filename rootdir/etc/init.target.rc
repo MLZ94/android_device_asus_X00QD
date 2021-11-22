@@ -177,8 +177,8 @@ on boot
     chown system system /persist/speccfg/partition
     
     # Touchpanel
-    chown system system /sys/touchpanel/double_tap
-    chmod 0664 /sys/touchpanel/double_tap
+    chown system system /sys/bus/i2c/devices/4-0038/dclick_mode
+    chmod 0664 /sys/bus/i2c/devices/4-0038/dclick_mode
 
 #Create folder dump yuv images while debugging
     mkdir /data/vendor/camera 0770 camera camera
@@ -256,10 +256,6 @@ on boot
 # Restrict permissions to socket file
 # to hide Magisk & co.
     chmod 440 /proc/net/unix
-
-    chmod 0664 /sys/touchpanel/capacitive_keys
-    chmod 0664 /sys/touchpanel/double_tap
-    chmod 0664 /sys/touchpanel/reversed_keys
 
     # Disable serial console
     setprop init.svc.console stopped
@@ -370,16 +366,6 @@ service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
 on property:ro.config.versatility=ID
     write /sys/module/sx9310/parameters/sar_switcher 1
 
-#Huaqin modify for disable sar in Indonesia by chenyijun5 at 2018/03/20 end
-
-# Huaqin add for ZQL1820-84 by liunianliang at 2018/07/16 start
-# for reduce power consumption.
-on property:sys.boot_completed=1
-    write /sys/class/gpio/export 12
-    write /sys/class/gpio/gpio12/direction out
-    write /sys/class/gpio/gpio12/value 0
-    write /sys/class/gpio/unexport 12
-# Huaqin add for ZQL1820-84 by liunianliang at 2018/07/16 end
 
 on property:sys.boot_completed=1
     # Enable EAS
