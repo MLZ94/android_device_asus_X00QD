@@ -7,7 +7,6 @@ type proc_evtlog, proc_type, sysfs_type, fs_type;
 allow fac_file self:filesystem associate;
 type log_file, file_type;
 
-type cdfinger_data_file, file_type, data_file_type, core_data_file_type;
 type debugfs_power_stats, fs_type, debugfs_type;
 
 # FPS Info
