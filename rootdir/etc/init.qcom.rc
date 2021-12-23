@@ -195,16 +195,9 @@ on boot
     # an ack packet comes out of order
     write /proc/sys/net/netfilter/nf_conntrack_tcp_be_liberal 1
 
-    #Huaqin modify for TT1244863 by suochuanqi on 2018/10/09 start
-    write /sys/bus/msm_subsys/devices/subsys4/restart_level related
-    #Huaqin modify for TT1244863 by suochuanqi on 2018/10/09 end
     # Set the console loglevel to < KERN_INFO
     # Set the default message loglevel to KERN_INFO
     write /proc/sys/kernel/printk "6 6 1 7"
-
-    #Huaqin modify for 1650P 1285483 by guanyebin on 2019/2/25 start
-    write /proc/sys/net/ipv4/tcp_mtu_probing 2
-    #Huaqin modify for 1650P 1285483 by guanyebin on 2019/2/25 end
 
     # Allow access for CCID command/response timeout configuration
     chown system system /sys/module/ccid_bridge/parameters/bulk_msg_timeout
@@ -295,23 +288,6 @@ on post-fs-data
     mkdir /data/vendor/wifi/wpa 0770 wifi wifi
     mkdir /data/vendor/wifi/wpa/sockets 0770 wifi wifi
 
-    # Huaqin add for ZQL1650-126 CountryCode by yangzhiyuan at 2018/01/23 start
-    mkdir /mnt/vendor/persist/flag 0771 system system
-    chown system system /mnt/vendor/persist/flag
-
-    chown system system /mnt/vendor/persist/flag/countrycode.txt
-    chmod 0644 /mnt/vendor/persist/flag/countrycode.txt
-    chown system system /mnt/vendor/persist/flag/cid.txt
-    chmod 0644 /mnt/vendor/persist/flag/cid.txt
-    chown system system /mnt/vendor/persist/flag/colorid.txt
-    chmod 0644 /mnt/vendor/persist/flag/colorid.txt
-    # Huaqin add for MULTI SIM by jindaolun at 2018/3/1 start
-    chown system system /mnt/vendor/persist/flag/multisim.txt
-    chmod 0644 /mnt/vendor/persist/flag/multisim.txt
-    # Huaqin add for MULTI SIM by jindaolun at 2018/3/1 end
-
-    # Huaqin add for ZQL1650-126 CountryCode by yangzhiyuan at 2018/01/23 end
-
     # Create the directories used by CnE subsystem
     mkdir /data/vendor/connectivity 0771 radio radio
     chown radio radio /data/vendor/connectivity
@@ -338,13 +314,6 @@ on post-fs-data
     chmod 0664 /sys/devices/platform/msm_sdcc.2/polling
     chmod 0664 /sys/devices/platform/msm_sdcc.3/polling
     chmod 0664 /sys/devices/platform/msm_sdcc.4/polling
-
-#Hua Qin <zhengwu.lu><2018-01-24> modify for ito test function node permission 1650-181 begin
-
-    chown system system /sys/devices/platform/tp_wake_switch/factory_check
-    chmod 0444 /sys/devices/platform/tp_wake_switch/factory_check
-
-#Hua Qin <zhengwu.lu><2018-01-24> modify for ito test function node permission 1650-181 end
 
     # Chown polling nodes as needed from UI running on system server
     chown system system /sys/devices/platform/msm_sdcc.1/polling
