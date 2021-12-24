@@ -110,8 +110,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects_GSI.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_GSI.xml \
     $(LOCAL_PATH)/configs/audio/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
     $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
-    $(LOCAL_PATH)/configs/audio/audio_output_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_output_policy.conf \
-    $(LOCAL_PATH)/configs/audio/audio_output_policy_24bit.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_output_policy_24bit.conf \
+    $(LOCAL_PATH)/configs/audio/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_io_policy.conf \
+    $(LOCAL_PATH)/configs/audio/audio_io_policy_24bit.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_io_policy_24bit.conf \
     $(LOCAL_PATH)/configs/audio/mixer_paths_ZE620KL.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_ZE620KL.xml \
     $(LOCAL_PATH)/configs/audio/mixer_paths_ZE620KL_EU.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_ZE620KL_EU.xml \
     $(LOCAL_PATH)/configs/audio/mixer_paths_ZE620KL_EU_24bit.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_ZE620KL_EU_24bit.xml \
