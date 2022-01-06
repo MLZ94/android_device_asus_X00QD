@@ -12,4 +12,6 @@ ro.hq.project=ZQL1650
 # GBoard
 ro.com.google.ime.kb_pad_port_b=1
 
+# ffs
+persist.sys.binary_xml=false
 
