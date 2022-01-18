@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_X00QD.mk
+    $(LOCAL_DIR)/radiant_X00QD.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_X00QD-userdebug \
-    aosp_X00QD-eng \
-    aosp_X00QD-user 
+    radiant_X00QD-userdebug \
+    radiant_X00QD-eng \
+    radiant_X00QD-user 
