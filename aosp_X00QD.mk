@@ -25,6 +25,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Inherit some common aosp stuff
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+# PixelExperience Properties
+TARGET_INCLUDE_WIFI_EXT := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_QUICK_TAP := true
+
 # Inherit from X00QD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
