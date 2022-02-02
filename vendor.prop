@@ -151,6 +151,9 @@ vendor.display.disable_scaler=0
 persist.dbg.volte_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
+# Graphics
+debug.cpurend.vsync=false
+
 # Media
 debug.stagefright.omx_default_rank.sw-audio=1
 debug.stagefright.omx_default_rank=0
