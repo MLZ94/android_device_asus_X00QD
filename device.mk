@@ -412,6 +412,10 @@ PRODUCT_PACKAGES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
+    
+# Configstore
+PRODUCT_PACKAGES += \
+    disable_configstore
 
 # Power
 PRODUCT_PACKAGES += \
