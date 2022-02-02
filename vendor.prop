@@ -121,6 +121,10 @@ persist.vendor.dpm.nsrm.bkg.evt=3955
 # DRM
 drm.service.enabled=true
 
+# Fling
+ro.min.fling_velocity=160
+ro.max.fling_velocity=20000
+
 # FM
 vendor.fm.a2dp.conc.disabled=false
 
