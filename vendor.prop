@@ -240,8 +240,6 @@ ro.vendor.qti.sensors.cmc=false
 sdm.debug.disable_skip_validate=1
 vendor.display.disable_skip_validate=1
 
-# SurfaceFlinger
-ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 
 # Set system properties identifying the chipset
 ro.soc.manufacturer=QTI
