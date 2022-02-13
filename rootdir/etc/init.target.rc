@@ -136,8 +136,11 @@ on post-fs
     wait_for_prop vendor.sys.listeners.registered true
     write /dev/ipa 1
 
-    # set RLIMIT_MEMLOCK to 64MB
-    setrlimit 8 67108864 67108864
+on late-fs
+    # Start services for bootanim
+    start servicemanager
+    start surfaceflinger
+    start bootanim
 
 on init
     write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
