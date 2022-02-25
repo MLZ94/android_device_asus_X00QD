@@ -23,7 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Inherit some common aosp stuff
-$(call inherit-product, vendor/aosp/common.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit from X00QD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -31,7 +31,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_BRAND := asus
-PRODUCT_MODEL := Zenfone 5
+PRODUCT_MODEL := ZenFone 5
 PRODUCT_DEVICE := X00QD
 PRODUCT_MANUFACTURER := ASUS
 PRODUCT_NAME := aosp_X00QD
