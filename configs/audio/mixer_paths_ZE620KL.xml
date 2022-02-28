@@ -2329,23 +2329,11 @@
     </path>
 
     <path name="camcorder-mic">
-        <ctl name="DEC2 MUX" value="ADC1" />
-        <ctl name="ADC1_INP1 Switch" value="1" />
-        <ctl name="DEC1 MUX" value="ADC2" />
-        <ctl name="ADC2 MUX" value="INP3" />
-        <ctl name="ADC1 Volume" value="4" />
-        <ctl name="ADC3 Volume" value="4" />
-        <ctl name="INT3_MI2S_TX Channels" value="Two" />
+        <path name="handset-mic" />
     </path>
 
     <path name="camcorder-mic-inverse">
-        <ctl name="DEC1 MUX" value="ADC1" />
-        <ctl name="ADC1_INP1 Switch" value="1" />
-        <ctl name="DEC2 MUX" value="ADC2" />
-        <ctl name="ADC2 MUX" value="INP3" />
-        <ctl name="ADC1 Volume" value="4" />
-        <ctl name="ADC3 Volume" value="4" />
-        <ctl name="INT3_MI2S_TX Channels" value="Two" />
+        <path name="handset-mic" />
     </path>
 
     <path name="hdmi-tx">
