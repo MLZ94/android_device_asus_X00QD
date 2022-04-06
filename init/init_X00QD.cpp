@@ -67,4 +67,5 @@ void set_avoid_gfxaccel_config() {
 void vendor_load_properties()
 {
     set_avoid_gfxaccel_config();
+    property_override("ro.treble.enabled", "");
 }
