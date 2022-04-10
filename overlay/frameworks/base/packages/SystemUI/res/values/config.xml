@@ -44,4 +44,7 @@
     <!-- Max visible notification icons -->
     <integer name="config_maxVisibleNotificationIcons">5</integer>
     <integer name="config_maxVisibleNotificationIconsWhenDark">6</integer>
+   
+     <!-- Whether or not to show the ripple animation when unlocking the device using fringerprint. -->
+    <bool name="config_show_fp_ripple">true</bool>
 </resources>
