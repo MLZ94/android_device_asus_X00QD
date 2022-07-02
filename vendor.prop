@@ -101,6 +101,7 @@ persist.vendor.camera.preview.ubwc=0
 # Camera HAL Setup
 persist.vendor.camera.HAL3.enabled=1 
 vendor.camera.hal1.packagelist=com.whatsapp,com.facebook.katana,com.instagram.android,com.snapchat.android
+persist.vendor.camera.perflock.enable=0
 
 # Codec2 switch
 debug.media.codec2=2
