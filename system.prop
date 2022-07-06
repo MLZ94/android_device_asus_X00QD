@@ -7,6 +7,7 @@ ro.com.google.rlz_ap_whitelist=y0,y5,y6,y7,y9
 arm64.memtag.process.system_server=off
 
 # Perf
+ro.vendor.qti.sys.fw.bg_apps_limit=32
 vendor.perf.gestureflingboost.enable=true
 
 # QC framework value-adds
