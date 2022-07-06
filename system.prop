@@ -6,6 +6,9 @@ ro.com.google.rlz_ap_whitelist=y0,y5,y6,y7,y9
 # Disable async MTE on system_server
 arm64.memtag.process.system_server=off
 
+# Perf
+vendor.perf.gestureflingboost.enable=true
+
 # QC framework value-adds
 ro.vendor.qti.va_aosp.support=1
 
