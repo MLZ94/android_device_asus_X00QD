@@ -19,29 +19,29 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common aosp stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common fluid stuff
+$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
 
-# PixelExperience Properties
-TARGET_INCLUDE_WIFI_EXT := true
-TARGET_GAPPS_ARCH := arm64
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_QUICK_TAP := true
+# Fluid stuff
+FLUID_BUILD_TYPE := OFFICIAL
+PRODUCT_PRODUCT_PROPERTIES += \
+  ro.fluid.maintainer=MLZ94 \
+  ro.fluid.cpu=SD636
 
 # Inherit from X00QD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_BRAND := asus
+PRODUCT_BRAND := Asus
 PRODUCT_MODEL := ZenFone 5
 PRODUCT_DEVICE := X00QD
-PRODUCT_MANUFACTURER := ASUS
-PRODUCT_NAME := aosp_X00QD
+PRODUCT_MANUFACTURER := Asus
+PRODUCT_NAME := fluid_X00QD
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
-TARGET_VENDOR := asus
+TARGET_VENDOR := Asus
 TARGET_VENDOR_PRODUCT_NAME := X00QD
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
