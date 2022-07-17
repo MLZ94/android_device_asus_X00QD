@@ -1,0 +1,14 @@
+[
+  {
+    "repository":"mvaisakh/gcc-arm",
+    "target_path":"prebuilts/gcc/linux-x86/arm/arm-eabi",
+    "branch":"master",
+    "remote":"github"
+  },
+  {
+    "repository":"mvaisakh/gcc-arm64",
+    "target_path":"prebuilts/gcc/linux-x86/aarch64/aarch64-elf",
+    "branch":"master",
+    "remote":"github"
+  }
+]
