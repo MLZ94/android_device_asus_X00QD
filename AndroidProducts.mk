@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/fluid_X00QD.mk
+    $(LOCAL_DIR)/lineage_X00QD.mk
 
 COMMON_LUNCH_CHOICES := \
-    fluid_X00QD-userdebug \
-    fluid_X00QD-eng \
-    fluid_X00QD-user 
+    lineage_X00QD-userdebug \
+    lineage_X00QD-eng \
+    lineage_X00QD-user 

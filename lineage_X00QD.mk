@@ -19,15 +19,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common fluid stuff
-$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
-
-# Fluid stuff
-TARGET_INCLUDE_GAPPS := true
-FLUID_BUILD_TYPE := OFFICIAL
-PRODUCT_PRODUCT_PROPERTIES += \
-  ro.fluid.maintainer=MLZ94 \
-  ro.fluid.cpu=SD636
+# Inherit some common lineage stuff
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from X00QD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -38,7 +31,7 @@ PRODUCT_BRAND := Asus
 PRODUCT_MODEL := ZenFone 5
 PRODUCT_DEVICE := X00QD
 PRODUCT_MANUFACTURER := Asus
-PRODUCT_NAME := fluid_X00QD
+PRODUCT_NAME := lineage_X00QD
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
