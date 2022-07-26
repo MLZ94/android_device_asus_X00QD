@@ -16,7 +16,7 @@
 #
 # This file sets variables that control the way modules are built
 # thorughout the system. It should not be used to conditionally
-# disable makefiles (the proper mechanism to control what gets
+# disable makefiles (the wproper mechanism to control what gets
 # included in a build is to use PRODUCT_PACKAGES in a product
 # definition file).
 #
@@ -503,6 +503,10 @@ PRODUCT_BOOT_JARS += \
 # QCOM
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/system_ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-qti.xml
+
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.sf.blurs_are_expensive=1 \
+    ro.surface_flinger.supports_background_blur=1
 
 # QMI
 $(call inherit-product, external/json-c/Android.configure.mk)
