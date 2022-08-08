@@ -549,6 +549,9 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     Settings \
     SystemUI
 
+# GrapheneCamera
+PRODUCT_PACKAGES += GrapheneCamera
+
 # Tetheroffload
 PRODUCT_PACKAGES += \
     ipacm \
