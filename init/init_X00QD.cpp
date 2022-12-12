@@ -68,4 +68,5 @@ void vendor_load_properties()
 {
     set_avoid_gfxaccel_config();
     property_override("ro.treble.enabled", "");
+    property_override("ro.apex.updatable", "false");
 }
