@@ -7,6 +7,7 @@
 DEVICE_PATH := device/asus/X00QD
 
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+TARGET_DISABLE_EPPE := true
 
 # Architecture
 TARGET_ARCH := arm64
