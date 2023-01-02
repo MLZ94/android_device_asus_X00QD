@@ -123,6 +123,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     libcnefeatureconfig
 
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.0-service-sdm
+
 # Display
 PRODUCT_PACKAGES += \
     gralloc.sdm660 \
