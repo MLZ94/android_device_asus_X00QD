@@ -501,10 +501,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.0-impl \
-#    android.hardware.vibrator@1.0-service
-
-PRODUCT_PACKAGES += \
 	android.hardware.vibrator@1.0-service.lineage
 
 # FIXME: master: compat for libprotobuf
